@@ -1,0 +1,10 @@
+<package format = "2">
+  #This is using format two, (recommended)
+
+</package> #this is the root tag
+
+<name> = samplepackage
+<version> = 1.0.0
+<description> ="A sample package"
+<maintainer> = "Taylor Pool"
+<license> = "Software license: Brigham Young University"  

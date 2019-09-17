@@ -1,0 +1,11 @@
+Packages in ROS are catkin packages.
+packages must have their own folders. No nested packages!
+
+Packages need a package.xml file.
+  this file defines package properties like name,
+    version number, author, etc.
+  package dependencies are declared in package.xml. If
+    not, then the package will not work correctly when
+    distributed to others.
+    see samplepackage.xml in this directory for more detail.
+Packages need a CMakeLists.txt file.

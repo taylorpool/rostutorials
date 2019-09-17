@@ -1,1 +1,28 @@
 Use rosinstall in order to install other packages in the future.
+
+grep finds patterns in files and then prints out lines matching those patterns
+
+catkin is the way to organize and build my code in ROS
+
+I need to source my setup.bash file. I need to source it each time unless I add
+it to my bash.rc file. Then it will run each time I open a shell.
+
+Source executes lines of code written in a file.
+
+rospack is a command that allows me to get information about packages.
+Using rospack find [package_name] returns the path to the package.
+
+roscd is a part of the rosbash suite. It lets me change directory directly to
+a package or a stack. It can also let me more to a subdirectory of a package or stack.
+
+I can see the values of environment variables by doing echo $ENVIRONMENT_VARIABLE
+
+I can add additional directories to my ROS_PACKAGE_PATH with each package separated
+by a colon
+
+I can go to log files using roscd log.
+
+I can view the contents of any ros package by rosls package_name
+
+I can use tab completion to see all possibilities for packages under that name.
+tab once, tab twice shows possibilities.

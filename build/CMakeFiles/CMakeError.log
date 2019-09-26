@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/magicc/rostutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_7f8ba/fast"
+/usr/bin/make -f CMakeFiles/cmTC_7f8ba.dir/build.make CMakeFiles/cmTC_7f8ba.dir/build
+make[1]: Entering directory '/home/magicc/rostutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f8ba.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_7f8ba.dir/CheckSymbolExists.c.o   -c /home/magicc/rostutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_7f8ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f8ba.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_7f8ba.dir/CheckSymbolExists.c.o  -o cmTC_7f8ba 
+CMakeFiles/cmTC_7f8ba.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x1b): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f8ba.dir/build.make:97: recipe for target 'cmTC_7f8ba' failed
+make[1]: *** [cmTC_7f8ba] Error 1
+make[1]: Leaving directory '/home/magicc/rostutorials/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7f8ba/fast' failed
+make: *** [cmTC_7f8ba/fast] Error 2
+
+File /home/magicc/rostutorials/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/magicc/rostutorials/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_2034d/fast"
+/usr/bin/make -f CMakeFiles/cmTC_2034d.dir/build.make CMakeFiles/cmTC_2034d.dir/build
+make[1]: Entering directory '/home/magicc/rostutorials/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2034d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_2034d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2034d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2034d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_2034d.dir/CheckFunctionExists.c.o  -o cmTC_2034d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_2034d.dir/build.make:97: recipe for target 'cmTC_2034d' failed
+make[1]: *** [cmTC_2034d] Error 1
+make[1]: Leaving directory '/home/magicc/rostutorials/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2034d/fast' failed
+make: *** [cmTC_2034d/fast] Error 2
+
+

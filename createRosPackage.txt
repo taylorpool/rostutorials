@@ -8,4 +8,6 @@ Packages need a package.xml file.
     not, then the package will not work correctly when
     distributed to others.
     see samplepackage.xml in this directory for more detail.
-Packages need a CMakeLists.txt file.
+Packages need a CMakeLists.txt file
+
+To create a package use catkin_create_pkg [package name] [depend1] [depend2]

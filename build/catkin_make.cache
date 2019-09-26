@@ -1,0 +1,2 @@
+beginner_tutorials
+-DCATKIN_DEVEL_PREFIX=/home/magicc/rostutorials/devel -DCMAKE_INSTALL_PREFIX=/home/magicc/rostutorials/install -G Unix Makefiles

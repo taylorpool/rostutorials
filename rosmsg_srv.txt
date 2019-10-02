@@ -1,0 +1,22 @@
+msg files are simple text files that describes fields of a ROS message. They are used to generate source code for messages in different languages.
+
+msg files have one field type and field name per line
+Ex
+
+double64 velocity
+
+Header header
+
+Header contains a timestamp and coordinate frame information
+
+field types can be other msg files like geometry_msgs
+
+
+a srv file describes a service. _ request and response
+
+Requests
+Separate requests and responses with ---
+int64 A
+---
+int64 B
+

@@ -11,3 +11,16 @@ Packages need a package.xml file.
 Packages need a CMakeLists.txt file
 
 To create a package use catkin_create_pkg [package name] [depend1] [depend2]
+
+In the packages.xml file we find information about the package like the name
+and who is maintaining the package.
+
+We also find a list of all dependencies broken up by class.
+
+build_depend
+Means that they are availible at build time
+buildtool_depend
+Means that the package is used to build this package
+exec_depend
+Means that we can access the package dependencies during run time
+test_depend

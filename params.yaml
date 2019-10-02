@@ -1,0 +1,12 @@
+background_b: 100
+background_g: 86
+background_r: 200
+rosdistro: 'melodic
+
+  '
+roslaunch:
+  uris: {host_magicc_thinkpad_w530__46397: 'http://magicc-ThinkPad-W530:46397/'}
+rosversion: '1.14.3
+
+  '
+run_id: 823f01ec-e12e-11e9-95c4-e09d3128c3e8

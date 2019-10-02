@@ -1,0 +1,1 @@
+ros services are another way that nodes can communicate with each other. They allow nodes to send a request and receive a response.

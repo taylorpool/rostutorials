@@ -1,0 +1,16 @@
+Nodes are executables that use ROS to communicate with other nodes
+Messages are a data type in ROS that are used when subscribing or publishing to a
+topic
+Nodes publish messages to a topic and subscribe to other topics.
+Master is the name service for ROS
+rosout is the equivalent of stdout/stderr
+roscore is Master and rosout and parameter server.
+
+rospy and roscpp are ros client libraries that allow nodes written in different
+languages to communicate with each other.
+
+rosnode brings up a list of all nodes currently running.
+
+rosnode info node brings up information about a node currently running.
+
+rosrun allows me to directly run a node within a package.
